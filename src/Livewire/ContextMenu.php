@@ -38,6 +38,6 @@ class ContextMenu extends Component
 
     public function render()
     {
-        return view('ld-context-menu::livewire.context-menu');
+        return view('sb-context-menu::livewire.context-menu');
     }
 }

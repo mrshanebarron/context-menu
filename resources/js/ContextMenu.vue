@@ -30,7 +30,7 @@
 import { ref, onMounted, onUnmounted } from 'vue';
 
 export default {
-  name: 'LdContextMenu',
+  name: 'SbContextMenu',
   props: {
     items: { type: Array, default: () => [] },
     target: { type: String, default: null }
