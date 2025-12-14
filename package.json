@@ -1,0 +1,12 @@
+{
+    "name": "@laraveldesign/context-menu",
+    "version": "1.0.0",
+    "description": "Right-click context menu component for Laravel",
+    "main": "resources/js/vue/index.js",
+    "module": "resources/js/vue/index.js",
+    "files": ["resources/js/vue"],
+    "keywords": ["laravel", "context", "menu", "right-click", "livewire", "vue"],
+    "author": "Shane Barron <mrshanebarron@gmail.com>",
+    "license": "MIT",
+    "peerDependencies": {"vue": "^3.0.0"}
+}
