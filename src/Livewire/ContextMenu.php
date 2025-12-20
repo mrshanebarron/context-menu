@@ -2,6 +2,7 @@
 
 namespace MrShaneBarron\ContextMenu\Livewire;
 
+use Livewire\Attributes\On;
 use Livewire\Component;
 
 class ContextMenu extends Component
@@ -11,13 +12,12 @@ class ContextMenu extends Component
     public int $x = 0;
     public int $y = 0;
 
-    protected $listeners = ['openContextMenu', 'closeContextMenu'];
-
     public function mount(array $items = []): void
     {
         $this->items = $items;
     }
 
+    #[On('open-context-menu')]
     public function openContextMenu(int $x, int $y): void
     {
         $this->x = $x;
@@ -32,7 +32,7 @@ class ContextMenu extends Component
 
     public function selectItem(int $index): void
     {
-        $this->dispatch('contextMenuSelected', index: $index, item: $this->items[$index] ?? null);
+        $this->dispatch('context-menu-selected', index: $index, item: $this->items[$index] ?? null);
         $this->show = false;
     }
 
