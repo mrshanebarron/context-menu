@@ -13,7 +13,7 @@
     x-transition:leave-end="opacity-0 scale-95"
     :style="`position: fixed; left: ${x}px; top: ${y}px; z-index: 50; min-width: 12rem; background-color: white; border-radius: 0.5rem; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05); border: 1px solid #e5e7eb; padding: 0.25rem 0; overflow: hidden;`"
 >
-    @foreach($items as $index => $item)
+    @foreach($this->items as $index => $item)
         @if(isset($item['divider']) && $item['divider'])
             <div style="border-top: 1px solid #e5e7eb; margin: 0.25rem 0;"></div>
         @else
